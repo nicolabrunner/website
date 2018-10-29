@@ -1,0 +1,373 @@
+/* ------------- For all pages ------------- */
+
+/* -- body spacing */
+/* space 10% right and 10% left for the entire body */
+body {
+  margin: auto;
+  width: 80%;
+}
+
+/* -- container */
+/* gray container */
+#container
+{
+  background-color: #E0E0E0;
+  padding: 20px;
+  margin-bottom: 20px;
+  min-width: 600px;
+  max-width: 1600px;
+}
+
+/* -- header */
+/* container of header */
+.container_header {
+    position: relative;
+    text-align: center;
+}
+/* position text in header */
+.bottom-left {
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+}
+
+/* -- menu bar */
+/* list */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #C8D7E3;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 8;
+}
+
+/* allignement  */
+li {
+    float: left;
+}
+
+/* display of links in the menu */
+li a {
+    display: block;
+    font-family: "Helvetica", Times, serif;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #2F4E6F;
+}
+
+.active {
+  background-color: #98B1C4;
+}
+
+/* -- footer */
+/* footer: adds space on top and bottom of footer, set color, set font */
+.footer {
+  width: 100%;
+  padding-left: 0em;
+  padding-right: 0em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: #98B1C4;
+  text-align: center;
+  font-family: "Helvetica", Times, serif;
+}
+
+/* font margin and padding */
+.footer h5 {
+  margin: 0;
+  padding: 0;
+}
+
+/* -- font styles */
+/* h1 */
+h1
+{
+  font-family: "Helvetica", "Segoe UI", Arial, serif;
+  font-size: 40px;
+  color: #E15119;
+  font-weight: lighter;
+}
+
+/* h2 */
+h2
+{
+  font-family: "Helvetica", "Segoe UI", Arial, serif;
+  font-size: 30px;
+  color: #E15119;
+  font-weight: lighter;
+}
+
+h3
+{
+  font-family: "Helvetica", "Segoe UI", Arial, serif;
+  font-size: 20px;
+  color: #E15119;
+  font-weight: lighter;
+}
+
+/* h5 */
+h5
+{
+  font-family: "Helvetica", "Segoe UI", Arial, serif;
+  font-size: 10px;
+  color: #FFFFFF;
+  font-weight: lighter;
+}
+
+/* p */
+p
+{
+  font-family: "Helvetica", "Segoe UI", Arial, serif;
+  font-size: 16px;
+  color: #000000;
+}
+
+/* a with all decoration desactivated */
+a
+{
+  text-decoration:none;
+}
+
+/* font for the menu */
+.menu_font
+{
+  font-family: "Helvetica", "Segoe UI", Arial, serif;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+/* -- Links */
+/* - for normal links */
+/* unvisited link */
+a:link {
+    color: black;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: #E15119;
+}
+
+/* selected link */
+a:active {
+    color: #E15119;
+}
+
+/* - for button links */
+/* unvisited link */
+a.speciale:link {
+  color: white;
+}
+
+/* visited link */
+a.speciale:visited {
+  color: white;
+}
+
+/* mouse over link */
+a.speciale:hover {
+    color: #E15119;
+}
+
+/* selected link */
+a.speciale:active {
+    color: #E15119;
+}
+
+/* ------------- For about page ------------- */
+
+/* -- style of CV button */
+.button {
+  border-radius: 5px;
+  display:inline-block;
+  padding:20px 40px;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:black;
+  background-color:#C8D7E3;
+  text-align:center;
+  font-size: 1.5em;
+  cursor:pointer;
+  white-space:nowrap;
+  font-family: "Helvetica", Times, serif;
+  font-weight: bold;
+}
+
+/* ------------- For photographer page ------------- */
+
+/* -- photo containers gallery */
+/* - container */
+.container_photo {
+  position: relative;
+  width: 18%;
+  max-width: 18%;
+  float: left;
+  margin:10px;
+}
+
+/* -image */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* overlay */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  left:0;
+  right:0;
+  transition: .5s ease;
+  opacity:0;
+  font-family: "Helvetica", "Segoe UI", Arial, serif;
+  font-size: 20px;
+  color: #FFFFFF;
+  font-weight: lighter;
+  padding: 20px;
+  text-align: center;
+}
+
+.container_photo:hover .overlay {
+  opacity: 1;
+}
+
+.center {
+  width: 95%;
+  margin: auto;
+}
+
+/* -- classes for creatin the gallery effect */
+/* modal windows for picture gallery */
+.modal {
+  position: fixed;
+  font-family: "Helvetica", "Segoe UI", Arial, serif;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,1);
+  z-index: 10;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  text-align:center;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal h2{
+  margin-top:5%;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.modal:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+/* position of the X */
+.close {
+  position: absolute;
+  right: 35px;
+  text-align: center;
+  top: 0;
+  width: 24px;
+  font-size:40px;
+  font-weight:bold;
+  transition:0.3s;
+  text-decoration: none;
+}
+
+.close:hover {
+  color: #E15119;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* link style of X for closing the modal window */
+.close:link, .close:visited, .close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/* -- space for youtube wideo top */
+iframe{
+  padding-left: 0em;
+  padding-right: 0em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+/* ------------- For contacts page ------------- */
+
+/* -- font for titles */
+#titolo
+{
+  font-family: "Helvetica", Times, serif;
+  color: #E15119;
+  font-weight: lighter;
+}
+
+/* -- social media buttons */
+/* general */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 5px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* instagram */
+.fa-instagram {
+  background: #125688;
+  color: white;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Photographer</title>
+      <meta name="keywords" content="Nicola Brunner, student, informatic, USI, Lugano,
+      photographer, landscape, firefighters, videomaker, party, events, sport">
+      <meta name="description" content="A Web page about Nicola Brunner">
+      <meta name="author" content="Nicola Brunner">
+      <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <!-- In the header we have a picture with a overlayed text -->
+    <div class="container_header">
+      <img src="contents/header2.jpg" alt="Panorama" width=100%>
+      <div class="bottom-left"><h1 >Photographer</h1></div>
+    </div>
+
+    <!-- Menu -->
+    <ul>
+      <li><a class="menu_font" href="index.html">About me</a></li>
+      <li><a class="active, menu_font" href="photographer.html">Photographer</a></li>
+      <li><a class="menu_font" href="contacts.html">Contacts</a></li>
+    </ul>
+
+    <!-- The entire "main" page is in a container -->
+    <div id="container">
+      <h2>Click Click Click!</h2>
+        <p>In my free time I like a lot photographing and shooting videos. In
+          particular I like to shoot: the work of the emergency agencies,
+          beautiful landscapes from the Swiss Alps, Sport Events, Concerts and
+          of course Parties. There are some examples, below in the gallery, of
+          what kind of photography and video I do.</p>
+
+      <!-- every picture is in a container_photo -->
+      <div class= "center">
+        <div class="container_photo">
+          <a href="#landscape" class="speciale">
+          <img src="contents/panorama_vertical.jpg" alt="Landscapes" class="image">
+          <div class="overlay">Landscapes
+          </a>
+          </div>
+        </div>
+      </div>
+
+      <div class= "center">
+        <div class="container_photo">
+          <a href="#Firefighters" class="speciale">
+          <img src="contents/firefighter_vertical.jpg" alt="Firefighter" class="image">
+          <div class="overlay">Firefighters
+          </a>
+          </div>
+        </div>
+      </div>
+
+      <div class= "center">
+        <div class="container_photo">
+          <a href="#Events" class="speciale">
+          <img src="contents/events_vertical.jpg" alt="Events" class="image">
+          <div class="overlay">Events
+          </a>
+          </div>
+        </div>
+      </div>
+
+      <div class= "center">
+        <div class="container_photo">
+          <a href="#Sports" class="speciale">
+          <img src="contents/sport_vertical.jpg" alt="Sports" class="image">
+          <div class="overlay">Sports
+          </a>
+          </div>
+        </div>
+      </div>
+
+      <div class= "center">
+        <div class="container_photo">
+          <a href="#Parties" class="speciale">
+          <img src="contents/party_vertical.jpg" alt="Parties" class="image">
+          <div class="overlay">Parties
+          </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal windows for the picture gallery "effect" -->
+      <div id="landscape" class="modal">
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Landscape from the beautiful Swiss Alps</h2>
+        <img src="contents/panorama.jpg" width="50%" class="modal-content" id="img01">
+      </div>
+
+      <div id="Firefighters" class="modal">
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Swiss Military firefighters in action</h2>
+        <img src="contents/firefighter.jpg" width="50%" class="modal-content" id="img01">
+      </div>
+
+      <div id="Events" class="modal">
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Dubioza kolektiv @ Esperance in musica</h2>
+        <img src="contents/events.jpg" width="50%" class="modal-content" id="img01">
+      </div>
+
+      <div id="Sports" class="modal">
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Swiss Orienteering Team @ EOC 2018</h2>
+        <img src="contents/sport.jpg" width="50%" class="modal-content" id="img01">
+      </div>
+
+      <div id="Parties" class="modal">
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Tognola Little Party in Chiasso</h2>
+        <img src="contents/party.jpg" width="50%" class="modal-content" id="img01">
+      </div>
+
+      <!-- YouTube video embed in a iframe -->
+      <center>
+        <iframe width="720" height="405" src="https://www.youtube.com/embed/zeWqz83dvVg"
+        alt="MomoExtreme Party" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <br>
+      </center>
+
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <h5><a class="speciale" href="copyright.html">Copyright</a> 2018 Nicola Brunner</h5>
+    </div>
+
+  </body>
+</html>
